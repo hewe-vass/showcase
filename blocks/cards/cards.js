@@ -11,10 +11,8 @@ export default function decorate(block) {
       else {
         div.className = 'cards-card-body';
         [...div.children].forEach((element) => {
-          console.log("-----element----");
-          console.log(element);
-          if(element.nodeName === "TABLE") {
-            
+          if (element.nodeName === 'TABLE') {
+            console.log('Element node == table')
           }
         })
       }
