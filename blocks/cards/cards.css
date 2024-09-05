@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
   display: grid;
-  // grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
 
 .cards > ul {
-  /* max-height: 840px;
-  overflow-y: scroll; */
+  display: block;
 }
 
 .cards > ul > li {

@@ -18,8 +18,8 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
-
-  --vass-color--black: #141414;
+  /* VASS colors */
+  --vass-color-black: #141414;
 
   /* fonts */
   --body-font-family: titillium, roboto-fallback;
@@ -228,5 +228,5 @@ main .section.highlight {
 }
 
 main .section.vass-dark {
-  background-color: var(--vass-color--black);
+  background-color: var(--vass-color-black);
 }
