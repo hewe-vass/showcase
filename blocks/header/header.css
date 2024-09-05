@@ -19,7 +19,7 @@ header nav {
   max-width: 1360px;
   height: var(--nav-height);
   padding: 0 1rem;
-  font-family: "Roboto-Regular", sans-serif;
+  font-family: 'Roboto-Regular', sans-serif;
 }
 
 header nav[aria-expanded='true'] {
