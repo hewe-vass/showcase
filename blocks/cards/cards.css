@@ -3,13 +3,25 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  // grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
 
+.cards > ul {
+  /* max-height: 840px;
+  overflow-y: scroll; */
+}
+
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
+  border-radius: 20px;
+  padding: 30px;
   background-color: var(--background-color);
+}
+
+.cards > ul > li:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .cards .cards-card-body {

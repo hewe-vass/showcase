@@ -4,12 +4,20 @@ main .hero-container > div {
 
 main .hero-container {
   padding: 0;
+  margin-top: calc(var(--nav-height)*-1);
 }
 
 .hero {
   position: relative;
   padding: 32px;
   min-height: 300px;
+  height: 763px;
+  display: flex;
+}
+
+.hero > div{
+  flex: 1;
+  align-content: end;
 }
 
 .hero h1 {
@@ -17,6 +25,8 @@ main .hero-container {
   margin-left: auto;
   margin-right: auto;
   color: white;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .hero picture {

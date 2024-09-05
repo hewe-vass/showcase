@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--vass-color--black);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -15,10 +15,12 @@ header nav {
   align-items: center;
   gap: 0 2em;
   margin: auto;
-  max-width: 1264px;
+  width: 90%;
+  max-width: 1360px;
   height: var(--nav-height);
   padding: 0 1rem;
-  font-family: var(--body-font-family);
+  // font-family: var(--body-font-family);
+  font-family: "Roboto-Regular", sans-serif;
 }
 
 header nav[aria-expanded='true'] {
@@ -51,6 +53,11 @@ header nav[aria-expanded='true'] {
 header nav p {
   margin: 0;
   line-height: 1;
+}
+
+header .nav-drop,
+header nav li {
+  color: #fff;
 }
 
 header nav a:any-link {

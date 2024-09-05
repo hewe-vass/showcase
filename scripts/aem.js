@@ -506,6 +506,9 @@ async function fetchPlaceholders(prefix = 'default') {
  * @param {*} content two dimensional array or string or object of content
  */
 function buildBlock(blockName, content) {
+  console.log("aem.js buildBlock-----");
+  console.log("blockName: ", blockName);
+  console.log("content: ", content);
   const table = Array.isArray(content) ? content : [[content]];
   const blockEl = document.createElement('div');
   // build image block nested div structure
@@ -536,6 +539,8 @@ function buildBlock(blockName, content) {
  * @param {Element} block The block element
  */
 async function loadBlock(block) {
+  console.log("aem.js loadBlock-----");
+  console.log("block: ", block);
   const status = block.dataset.blockStatus;
   if (status !== 'loading' && status !== 'loaded') {
     block.dataset.blockStatus = 'loading';
