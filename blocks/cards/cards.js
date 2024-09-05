@@ -12,9 +12,9 @@ export default function decorate(block) {
         div.className = 'cards-card-body';
         [...div.children].forEach((element) => {
           if (element.nodeName === 'TABLE') {
-            console.log('Element node == table')
+            console.log('Element node == table');
           }
-        })
+        });
       }
     });
     ul.append(li);
