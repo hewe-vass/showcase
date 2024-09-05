@@ -18,9 +18,12 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  
+  /* VASS colors */
+  --vass-color-black: #141414;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: titillium, roboto-fallback;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -223,4 +226,8 @@ main .section {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+main .section.vass-dark {
+  background-color: var(--vass-color-black);
 }
