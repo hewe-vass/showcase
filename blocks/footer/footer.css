@@ -1,3 +1,7 @@
+.footer-wrapper {
+  background-color: var(--vass-color-black)
+}
+
 footer {
   padding: 2rem;
   background-color: var(--light-color);
